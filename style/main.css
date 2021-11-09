@@ -1,0 +1,111 @@
+:root {
+  --vermelho: #e50914;
+  --preta: #141414;
+  --cinza: #aaa;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--preta);
+  font-family: sans-serif;
+  color: white;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  color: var(--vermelho);
+  font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--cinza);
+  margin-right: 0.5rem;
+}
+
+header nav a:hover {
+  color: white;
+}
+
+.filme-principal {
+  font-size: 16px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/capa_filme_dune.jpg");
+  height: 400px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.filme-principal .descricao {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.container {
+  margin: 20px 30px;
+}
+
+.titulo {
+  font-size: 40px;
+  margin-top: 1%;
+}
+
+.botao {
+  border: none;
+  padding: 7px 15px;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.1s ease all;
+  margin-right: 10px;
+}
+
+.botao.assistir {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
+}
+
+.botao.assistir:hover {
+  background-color: var(--cinza);
+}
+
+.botao.info {
+  background-color: rgba(200, 200, 200, 0.5);
+  color: white;
+}
+
+.botao.info:hover {
+  background-color: rgba(200, 200, 200, 0.3);
+}
+
+.botao i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.box-filme {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.carousel-title {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
